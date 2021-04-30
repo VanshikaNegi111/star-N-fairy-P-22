@@ -59,7 +59,7 @@ function draw() {
   //console.log(starBody);
 
   //write code to stop star in the hand of fairy
-  if(star.y > 337 && starBody.position.y > 337)
+  if(star.y > 343 && starBody.position.y > 343)
   {
 	Matter.Body.setStatic(starBody,true);
   }
@@ -80,12 +80,12 @@ function keyPressed() {
 	//writw code to move fairy left and right
 	if(keyDown("LEFT_ARROW")) 
 	{
-		fairy.x = fairy.x - 65;
+		fairy.x = fairy.x - 60;
 	}
 
 	if(keyDown("RIGHT_ARROW")) 
 	{
-		fairy.x = fairy.x + 70;
+		fairy.x = fairy.x + 55;
 	}
 	
 }
